@@ -1,0 +1,62 @@
+@charset "utf-8";
+	.img_holder_v3{
+		position: relative;
+		overflow: hidden;
+		height: 200px;
+		width: 708px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.img_holder_v3 img{
+		position:absolute;
+		transition: height 0.5s, width 0.5s, left 0.5s, top 0.5s;;
+	}
+	.img_holder_v3 img[x_pos="lx"]{
+		left:-52px;
+		top:30px;
+		height:50px;
+		width:50px;
+	}
+	.img_holder_v3 img[x_pos="l2"]{
+		left:0px;
+		top:20px;
+		height:100px;
+		width:100px;
+	}
+	.img_holder_v3 img[x_pos="l1"]{
+		left:102px;
+		top:10px;
+		height:150px;
+		width:150px;
+	}
+	.img_holder_v3 img[x_pos="c"]{
+		left:254px;
+		top:0px;
+		height:200px;
+		width:200px;
+	}
+	.img_holder_v3 img[x_pos="r1"]{
+		left:456px;
+		top:10px;
+		height:150px;
+		width:150px;
+	}
+	.img_holder_v3 img[x_pos="r2"]{
+		left:608px;
+		top:20px;
+		height:100px;
+		width:100px;
+	}
+	.img_holder_v3 img[x_pos="rx"]{
+		left:710px;
+		top:30px;
+		height:50px;
+		width:50px;
+	}
+	
+	.image-slider {
+		text-align:center;
+	}
+
+/* CSS Document */
+

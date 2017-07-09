@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/image_slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+
+    <!-- the following code is for google analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98783726-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- google analytics -->
+    <title>Impossible Triangle</title>
+    </head>
+<body id="order-html">
+
+    <header class="container-fluid">
+        <nav class="navbar navbar-toggleable-md">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img class="logo unselectable" src="./assets/logo/logo_3d.svg" alt="logo"></a>
+            <div class="collapse navbar-collapse absolute-top" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto text-uppercase unselectable">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="index.html#about">about</a>
+                    <a class="nav-item nav-link" href="index.html#portfolio">portfolio</a>
+                    <a class="nav-item nav-link" href="order.html">order</a>
+                    <a class="nav-item nav-link" href="index.html#contact">contact</a>
+                    <a class="nav-item nav-link" href="#login" id="nav-login">log-in</a>
+                    </div>
+                </div>
+        </nav>
+    	
+    </header>
+    <div class="login-bk display-none" id="login">
+        <div class="login font-main">
+            <div>
+                <span class="txt-w">System</span> <span class="txt-p-thin">Login</span>
+                <i class="fa fa-window-close close" aria-hidden="true"></i><!--close-->
+            </div>
+            <div class="form-group txt-b">
+                <label>User name</label>
+                <input type="text" class="form-control" placeholder="User name">
+                <label>Password</label>
+                <input type="password" class="form-control" placeholder="Password">
+                <button class="btn" type="submit">Button</button>
+                <input class="btn" type="reset" value="Reset">
+            </div>
+        </div><!--login-->
+    </div><!--login-bk-->
+    <div class="container row order" id="order-form">
+        <div class="col-12 form-title"><span data-toggle="popover" data-placement="bottom" title="Order Form" data-content="Please complete the following to make your order."><span class="txt-w">Order </span><span class="txt-p-thin">Form</span></span></div><!--col-12-->
+        <div class="col-md-6">
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Please input your full name.">1. Your Name</tag></div>
+            </div><!--row input-tag-->
+            <div class="row input-area">
+                <div class="col-6"><input type="text" placeholder="John"></div>
+                <div class="col-6"><input type="text" placeholder="Doe"></div>
+                <div class="col-6"><tag>First</tag></div>
+                <div class="col-6"><tag>Last</tag></div>
+            </div><!--row input-area-->
+
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Please input your phone number.">2. Phone Number</tag></div>
+            </div>
+            <div class="row input-area">
+                <div class="col-2"><input type="text"><tag>###</tag></div>
+                <div class="col-2"><input type="text"><tag>###</tag></div>
+                <div class="col-4"><input type="text"><tag>####</tag></div>
+            </div><!--row input-area-->
+
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Please input your email address.">3. Email</tag></div>
+            </div><!--row input-tag-->
+            <div class="row input-area">
+                <div class="col-6"><input type="text" placeholder="john@email.com"></div>
+            </div><!--row input-area-->
+
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Please let us know if you would like your product to be delivered by mail or you will come to pick up by yourself by choosing one of the following options.">3. Delivery or Pickup?</tag></div>
+            </div><!--row input-tag-->
+            <div class="row input-area">
+                <div class="col-12">
+                    <label class="custom-control custom-radio">
+                        <input name="radio" type="radio" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Delivery</span>
+                    </label>
+                    <label class="custom-control custom-radio">
+                        <input name="radio" type="radio" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Pickup</span>
+                    </label>
+                </div><!--col-12-->
+            </div><!--row input-area-->
+
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Please let us know your address.">4. Address</tag></div>
+            </div><!--row input-tag-->
+            <div class="row input-area">
+                <div class="col-12"><input type="text"></div>
+                <div class="col-12"><tag>Street Address</tag></div>
+                <div class="col-12"><input type="text"></div>
+                <div class="col-12"><tag>Street line 2</tag></div>
+                <div class="col-6"><input type="text"><tag>City</tag></div>                      
+                <div class="col-6"><input type="text"><tag>State</tag></div>
+                <div class="col-6"><input type="text"><tag>Postal / Zip Code</tag></div>                      
+                <div class="col-6"><input type="text"><tag>Country</tag></div>
+            </div><!--row input-area-->
+        </div><!--col-6-->
+        <div class="col-md-6">
+            <div class="row input-tag">
+                <div class="col-12"><tag data-toggle="popover" data-content="Is there anything else your would like to tell us?">5. Questions or Comments</tag></div>
+                <div class="col-12"><textarea class="form-control" rows="7"></textarea></div>
+            </div><!--row input-tag-->
+            <div class="row input-tag">
+                <div class="col-12">
+                    <tag data-toggle="popover" data-content="Choose the product your would like to order.">6. Product to order</tag>
+                    <select class="form-control">
+                        <option>--Select Product--</option>
+                        <option>iCircle</option>
+                        <option>iTriangle</option>
+                        <option>iHexagram</option>
+                        <option>iCube</option>
+                        <option>iCross</option>
+                        <option>iArrow</option>
+                        <option>iMaze</option>
+                    </select><!--form-control-->
+                </div><!--col-12-->
+            </div><!--row input-tag-->
+            <div class="row input-tag">
+                <div class="col-12"><tag>Total: $0.00</tag></div>
+                <div class="col-12"><tag>Credit Cards Accepted</tag></div>
+                <div class="col-12"><img src="assets/images/credit-card-logo.png" alt="credit card logo"></div>
+                <div class="col-12"><tag data-toggle="popover" data-content="Pleae complete your credit card information.">7. Card Information</tag></div>
+                <div class="col-6"><tag>First Name</tag></div><div class="col-6"><tag>Last Name</tag></div>
+                <div class="col-6"><input type="text"></div><div class="col-6"><input type="text"></div>
+                <div class="col-6"><tag>Credit Card Number</tag></div><div class="col-6"><tag>Security Code</tag></div>
+                <div class="col-6"><input type="text"></div><div class="col-6"><input type="text"></div>
+                <div class="col-6"><tag>Expiration Month</tag></div><div class="col-6"><tag>Expiration Year</tag></div>
+                <div class="col-6">
+                    <select class="form-control">
+                        <option>--Select Month--</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select><!--form-control-->
+                </div>
+                <div class="col-6">
+                    <select class="form-control">
+                        <option>--Select Year--</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                    </select><!--form-control-->
+                </div>
+            </div><!--row input-tag-->
+        </div><!--col-6-->
+        <div class="col-12 btns">
+            <button class="btn" type="submit">Submit</button>
+            <button class="btn" type="reset">Reset</button>
+        </div><!--col-12 form-title-->
+    </div><!--order-->
+
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/698c101a4e.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+    $(function () {
+  		$('[data-toggle="popover"]').popover()
+	});
+</script>
+
+</body>
+</html>

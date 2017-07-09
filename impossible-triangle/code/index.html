@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-control" content="public">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/image_slider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-98783726-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <title>Impossible Triangle</title>
+</head>
+<body>
+
+    <header class="container-fluid" >
+        <nav class="navbar navbar-toggleable-sm">
+            <a class="navbar-brand" href="#"><img class="logo unselectable" src="./assets/logo/logo_3d.svg" alt="logo"></a>
+            <div class="collapse navbar-collapse fixed-top" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto text-uppercase unselectable">
+                    <a class="nav-item nav-link" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#about">about</a>
+                    <a class="nav-item nav-link" href="#portfolio">portfolio</a>
+                    <a class="nav-item nav-link" href="order.html">order</a>
+                    <a class="nav-item nav-link" href="#contact">contact</a>
+                    <a class="nav-item nav-link" href="#login" id="nav-login">log-in</a>
+                    </div>
+             </div>
+             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon fixed-top"></span>
+            </button>
+        </nav>
+        <div class="txt-header-titles" data-toggle="popover" data-placement="bottom" title="Thanks for visiting  :-)" data-content="Hi there, I am a web student and this is my first work of responsive web design. Enjoy!">
+            <img src="assets/images/header_impossible.svg" alt="title">
+            <img src="assets/images/header_triangle.svg" alt="title">
+            <!--
+            <p class="txt-w unselectable">Im<span style="letter-spacing:-20px;">p<span style="vertical-align:middle;font-size:100px;">&#9662;</span></span>ssible</p>
+        	<p class="txt-p-thin unselectable">Triangle</p>-->
+ 		</div>
+    </header>
+    <main>
+    	<div class="login-bk display-none" id="login">
+        	<div class="login font-main">
+                <div>
+                    <span class="txt-w">System</span> <span class="txt-p-thin">Login</span>
+                    <i class="fa fa-window-close close" aria-hidden="true"></i><!--close-->
+                </div>
+                <div class="form-group txt-b">
+                    <label>User name</label>
+                    <input type="text" class="form-control" placeholder="User name">
+                    <label>Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                    <button class="btn" type="submit">Button</button>
+                    <input class="btn" type="reset" value="Reset">
+                </div>
+            </div><!--login-->
+        </div><!--login-bk-->
+        <div class="about-bk" id="about">
+            <div class="about">
+                <h1 class="section-title"><span class="txt-b">About </span><span class="txt-p-thin">Us</span></h1>
+                <div class="about-section">
+                    <ul class="nav nav-tabs flex-tabs">
+                        <li class="nav-item" id="ids">
+                            <div class="nav-link " name="c" onclick="clickAboutTab(this)">Culture</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" name="v" onclick="clickAboutTab(this)">Value</div>
+                        </li>
+                        <li class="nav-item"> 
+                            <div class="nav-link active" name="s" onclick="clickAboutTab(this)">Story</div>
+                        </li>
+                    </ul>
+                    <div class="about-item">
+                        <section class="section active" name="s">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </section>
+                        <section class="section" name="v">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. </section>
+                        <section class="section" name="c">sLe Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.</section>
+                    </div><!--about-item-->
+                </div><!--about-section-->
+            </div><!--about-->
+        </div><!--about-bk-->
+    	<div class="portfolio-bk">
+            <div class="portfolio" id="portfolio">
+                <h1 class="section-title"><span class="txt-b">Port</span><span class="txt-p-thin">folio</span></h1>
+                <div class="portfolio-section">
+                    <div class="image-slider">
+                        <div class="img_holder_v3" display="5">
+                            <img src="assets/images/01.portfolio_circle.svg" alt="img" name="img1">
+                            <img src="assets/images/02.portfolio_triangle.svg" alt="img" name="img2">
+                            <img src="assets/images/03.portfolio_double_triangle.svg" alt="img" x_pos="c" name="img3">
+                            <img src="assets/images/04.portfolio_cube.svg" alt="img" name="img4">
+                            <img src="assets/images/05.portfolio_cross.svg" alt="img" name="img5">
+                            <img src="assets/images/06.portfolio_arrow.svg" alt="img" name="img6">
+                            <img src="assets/images/07.portfolio_maze.svg" alt="img" name="img7">
+                        </div>
+                        <span class="unselectable" onclick="imageSlide(1);">&#9664;</span>
+                        <span class="unselectable" onclick="imageSlide(-1);">&#9654;</span>
+                        <div class="display-none">
+                            <p id="img1" name="iCircle">The design of iCircle is simple yet elegant.<br>A nice choise for necklace pandent.<br>Multiple colors are available.<br>By <span class="txt-w">Tom</span> in 2000<br>Now <span class="txt-w">$5.99</span></p>
+                            <p id="img2" name="iTriangle">The design of iCircle is classic.<br>A nice choise for necklace pandent.<br>Multiple colors are available.<br>By <span class="txt-w">Mia</span> in 1997<br>Now <span class="txt-w">$5.99</span></p>
+                            <p id="img3" name="iHexagram">iHexagram is made of two impossible triangle.<br>This product is the love of most of our customers.<br>Multiple colors are available.<br>By <span class="txt-w">Mia</span> in 2005<br>Now <span class="txt-w">$8.99</span></p>
+                            <p id="img4" name="iCube">The design of iCube is simple yet elegant<br>A very good choise to decorate your home or office.<br>Multiple colors are available.<br>By <span class="txt-w">Tom</span> in 2001<br>Now <span class="txt-w">$8.99</span></p>
+                            <p id="img5" name="iCross">iCross a real piece of art.<br>A very good choise to decorate your home or office.<br>Multiple colors are available.<br>By <span class="txt-w">Mia</span> in 2005<br>Now <span class="txt-w">$8.99</span></p>
+                            <p id="img6" name="iArrow">A bizarre looking design, yet highly rated by customer.<br>Multiple colors are available.<br>By <span class="txt-w">Mia</span> in 2009<br>Now <span class="txt-w">$15.99</span></p>
+                            <p id="img7" name="iMaze">Does this piece of art looks like maze or snowflake?<br>The design is complecated and need a lot of time to be made.<br>Multiple colors are available.<br>By <span class="txt-w">Tom</span> in 2005<br>Now <span class="txt-w">$19.99</span></p>
+                        </div>
+                    </div>
+                    <div class="txt-product-description">
+                        <p class="txt-name txt-b">Product Name</p>
+                        <p class="txt-details txt-b">Product Description. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                    </div> 
+                </div><!--portfolio-section-->
+
+            </div><!--portfolio-->
+        </div><!--portfolio-bk-->
+
+    </main><!--main-->
+    <footer class="footer-bk">
+        <div class="container-fluid footer-main" id="contact">
+            <div class="row">
+                <div class="col-sm-6 contact">
+                    <div class="row"><label class="txt-w">Con</label><label class="txt-p-thin">tact</label></div>
+                    <div class="row"><i class="fa fa-phone" aria-hidden="true"></i><p>(99) 999 999 999</p></div>
+                    <div class="row"><i class="fa fa-fax" aria-hidden="true"></i><p>(88) 888 888 888</p></div>
+                    <div class="row"><i class="fa fa-envelope" aria-hidden="true"></i><p>inquiry@impossible-triangle.com</p></div>
+                    <div class="row"><i class="fa fa-address-book" aria-hidden="true"></i><p>5 Kings Street, Moorabin, Vic</p></div>
+                </div><!--col-6-->
+                <div class="col-sm-6 social">
+                	
+                    <div class="row">
+                        <label class="txt-w">Fol</label><label class="txt-p-thin">low</label>
+                    </div><!--row-->
+                    <div class="row">
+                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i>
+                    </div><!--row-->
+                    <div class="row">
+                        <p><span class="txt-w">&#169;</span> 2010 - 2017 ImpossibleTriangle Pty. Ltd.</p>
+                    </div><!--row-->
+                </div><!--col-6-->
+            </div><!--row-->       
+        </div><!--container-fluid footer-main-->
+
+        
+
+    </footer><!--footer-->
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/698c101a4e.js"></script>
+    <script src="./js/image_slider.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,334 @@
+/* >>> general */
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+.txt-center {
+    text-align: center;
+}
+.color-w {
+    color: #f6f7f0;
+}
+.color-b{
+    color:#4c362c;
+}
+.bk-w {
+    background-color: #f6f7f0;
+}
+/* <<< general */
+/* >>> index.php */
+body {
+    margin:0;
+    background-image: url("images/texture.jpg");
+}
+.wrapper{
+    margin: auto;
+    width: 960px;
+    overflow: hidden;
+    
+}
+.clearfix {
+    width: 100%;
+    height: 518px;
+    content: "";
+    clear: both;
+    display: table;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+main{
+    width: 655px;
+    height: 100%;
+    margin-left: 0px;
+    margin-right: 7px;
+    float: left;
+}
+
+aside {
+    width: 291px;
+    height: 518px;
+    margin-left: 7px;
+    margin-right: 0px;
+    float: left;
+    
+}
+
+aside > *{
+    color: #4c362c;
+	font-family:'Roboto', sans-serif;
+	font-size: 14px;
+}
+aside .screen-reader-text, aside caption{
+    color: #4c362c;
+	font-family:'Roboto', sans-serif;
+    font-weight: bold;
+	font-size: 18px;
+    margin-top:20px;
+}
+/* <<< index.php */
+
+/* >>> header.php */
+header {
+    width: 960px;
+    height: 209px;
+    background-image:url("images/header.jpg")
+}
+
+header .nav {
+    list-style-type: none;
+    margin-top: 30px;
+	margin-right: 55px;
+    padding: 0;
+    overflow: hidden;
+	float:right;
+}
+
+header .nav li {
+    float: left;
+}
+
+header .nav li a {
+    display: block;
+    color: #4c362c;
+    text-align: center;
+	text-shadow: 0px 0px 10px white;
+    padding: 2px 16px;
+    text-decoration: none;
+	font-family:'Roboto', sans-serif;
+	font-style:italic;
+	font-size: 20px;
+	border: 1px solid transparent;
+}
+
+header .nav li.current_page_item{
+	color: #490b0a;
+	font-style:italic;
+	font-weight:bold;
+
+}
+
+header .nav li a:hover {
+	color:#a86617;
+	border: 1px solid #a86617;
+    border-radius: 5px;
+
+}
+/* <<< header.php */
+
+/* >>> footer.php */
+footer{
+    height: 259px;
+    width:100%;
+    background-color: #44372e;
+    background-image: url("images/footer.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+footer .contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+footer .trading{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+footer .follow{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+footer .follow i{
+    margin-right: 10px;
+}
+footer .subscribe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 40px;
+}
+footer .subscribe button{
+    cursor: pointer;
+}
+/* <<< footer.php */
+
+/* >>> page post */
+main .post-list:nth-child(even){
+    background-color: rgba(232, 220, 136, 0.4);
+    
+}
+main .post-list:nth-child(odd){
+    background-color:rgba(148, 115, 89, 0.4);
+}
+main .post-list a {
+    color: #4c362c;
+    text-align: left;
+	font-family:'Roboto', sans-serif;
+}
+main .post-list a.post-title {
+
+    color: #4c362c;
+    text-align: left;
+    text-decoration: none;
+	font-family:'Roboto', sans-serif;
+	font-size: 24px;
+    font-weight:bold;
+
+}
+main .post-list a {
+    color: #4c362c;
+    text-align: left;
+	font-family:'Roboto', sans-serif;
+}
+
+div.post-content, main .post-list div.post-content {
+
+    color: #0f0f0f;
+    text-align: left;
+    text-decoration: none;	font-family:'Roboto', sans-serif;
+	font-size: 18px;
+}
+.post-page, .post-page a.page-numbers{
+    color: #4c362c;
+    text-align: left;
+	font-family:'Roboto', sans-serif;
+	font-size: 14px;
+}
+.post-page, .post-page span.page-numbers{
+    color: #4c362c;
+    text-align: left;
+	font-family:'Roboto', sans-serif;
+	font-size: 14px;
+    font-weight:bold;
+}
+
+/* <<< page post */
+
+/* >>> page gallery */
+.gallery {
+    position: relative;
+    padding: 0;
+    height: 518px;
+    background-color: #140b09;
+}
+.gallery img{
+    position: absolute;
+    padding: 0;
+    margin: 1px;
+}
+.gallery #img01 {
+    margin-top:0;
+    margin-left:0;
+    left:0;
+    top:0;
+}
+.gallery #img02 {
+    margin-left:0;
+    left:0;
+    top:132px;
+
+}
+.gallery #img03 {
+    left:160px;
+    top:132px;
+}
+.gallery #img04 {
+    margin-top:0;
+    left:421px;
+    top:0;
+}
+.gallery #img05 {
+    margin-top: 0;
+    left:587px;
+    top:0;
+}
+.gallery #img06 {
+    margin-top:0;
+    left:748px;
+    top:0;
+}
+.gallery #img07 {
+    margin-bottom: 0;
+    margin-left: 0;
+    left:0;
+    top:352px;
+}
+.gallery #img08 {
+    margin-bottom: 0;
+    left:277px;
+    top:290px;
+}
+.gallery #img09 {
+    margin-bottom: 0;
+    left:587px;;
+    top:256px;
+}
+
+/* <<< page gallery */
+
+/* >>> page cafe */
+.cafe {
+    position:relative;
+    height:518px;
+    width:960px;
+}
+.cafe img, .cafe div{
+    position: absolute;
+    color: #4c362c;
+	font-family:'Roboto', sans-serif;
+	font-size: 38px;
+    font-weight:bold;
+}
+.cafe .wp-image-80{
+    top:0;
+    left:0;
+}
+.cafe .txt1{
+    top:20%;
+    right:20%;
+}
+.cafe .txt2{
+    bottom:20%;
+    left:20%;;
+}
+.cafe .wp-image-81{
+    bottom:0;
+    right:0;
+}
+/* <<< page cafe */
+
+/* >>> page about */
+.about {
+    height:100%;
+    width: auto;
+    padding: 20px;
+    background-image: url("images/texture.jpg");
+}
+.about h1{
+    text-align: center;
+    color: #4c362c;
+	font-family:'Roboto', sans-serif;
+    font-size: 28px;
+}
+.about p{
+    color: #4c362c;
+	font-family:'Roboto', sans-serif;
+    font-size:18px;
+}
+.about p:first-of-type{
+    text-align: right;
+}
+/* <<< page about */
